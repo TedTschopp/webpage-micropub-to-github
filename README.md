@@ -19,7 +19,7 @@ Unsupported:
 * Deletes
 
 ## Requirements
-Requires at least Node.js 6.0.0.
+Requires at least Node.js 8.0.0.
 
 This project contains a [https://yarnpkg.com/](Yarn) lock file which is a faster and more secure alternative to the npm client.
 
@@ -72,6 +72,7 @@ Variable | Description
 `MICROPUB_PERMALINK_STYLE` | [Jekyll permalink style](http://jekyllrb.com/docs/permalinks/). Example: `/:categories/:year/:month/:title/`
 `MICROPUB_LAYOUT_NAME` | The name of the Jekyll layout to use for the posts. Set to `false` to have no layout be added. Defaults to `microblogpost`
 `MICROPUB_OPTION_DERIVE_CATEGORY` | Override the default category
+`MICROPUB_GITHUB_BRANCH` | Branch to use for pushes. Useful to test out if things end up where you want them to. Example: `micropub`
 
 #### Complex output styles
 
@@ -84,6 +85,7 @@ Variable | Description
 `MICROPUB_OPTION_NO_AUTO_CONFIGURE` | Auto-configure permalink status from the Jekyll repo config. Boolean
 `MICROPUB_OPTION_DERIVE_LANGUAGES` | Comma separated list of language codes to auto-detect. Example `eng,swe`
 `MICROPUB_HOST` | Domain name to enforce. Will redirect requests to all other domain names and IP addresses that the endpoint can be accessed on.
+`MICROPUB_ENCODE_HTML` | (_non-standard_) Option to opt out of HTML-encoding of text content if set to `false`. Defaults to `true`.
 
 ### Conditional values
 
